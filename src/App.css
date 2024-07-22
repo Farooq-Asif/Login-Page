@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+:root {
+  --primary: rgba(241, 234, 234, 0);
+  --Colors-Primary-Orange: rgba(238, 89, 49, 1);
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100vh;
+  background-image: url(Images/cusauth.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-orange {
+  color: var(--Colors-Primary-Orange);
+}
+
+/*  */
+#createauthform {
+  background-color: #fff;
+  border-radius: 40px;
+  width: 552px;
+
+}
+
+@media screen and (max-width:900px) {
+  .createauthform {
+    width: 400px;
+    height: 700px;
+
+  }
+
+  body {
+    height: 200vh;
+  }
+
+}
+
+@media screen and (max-width:320px) {
+  .createauthform {
+    width: 400px;
+    /* height: 400px; */
+
+  }
+
+  body {
+    height: 100vh;
+  }
+
+}
+
+
+@media screen and (min-width:894px) and (max-width:952px) {
+  body {
+    height: 240vh;
+  }
+
+}
+
+@media screen and (max-width:375px) {
+  body {
+    height: 240vh;
+  }
+
+  .createauthform {
+    height: 650px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (min-width:315px) and (max-width:418px) {
+  body {
+    height: 240vh;
+  }
+
+  .createauthform {
+    height: 700px;
+  }
+}
+
+.tripyy-section {
+  flex-wrap: wrap;
+  Top: 302px;
+  height: 439px;
+  Left: 144px;
+  Gap: 65px;
+  height: 439.6px;
+}
+
+.tripyy-img {
+  width: 211.59px;
+  height: 84px;
+}
+
+.tripyy-body {
   display: flex;
   flex-direction: column;
+  width: 500px;
+  height: 290.6px;
+  gap: 57.6px;
+}
+
+/*  */
+/* .input-area {
+  position: relative;
+}
+
+#InputEmail {
+  background: transparent;
+  
+}
+
+.form-label {
+  position: absolute;
+  top: 29px;
+  left: 26px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+} */
+
+
+#inputEmail:focus .form-label{
+  bottom: 0px;
+}
+
+#InputEmail {
+  border-radius: 20px;
+  border: 1.2px solid rgba(13, 35, 46, 1);
+
+}
+
+#InputPassword {
+  border-radius: 20px;
+  border: 1.2px solid rgba(13, 35, 46, 1);
+  background-color: #fff;
+
+}
+
+
+
+/* checkbox remmber me */
+
+.checkbox {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.checkbox__input {
+  cursor: pointer;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+
+.checkbox__inner {
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #626262;
+  background: transparent no-repeat center;
+}
+
+.checkbox__input:checked+.checkbox__inner {
+
+  border-color: black;
+  background-color: black;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 14px 10px;
+}
+
+/* countinue button */
+.countinu-btn {
+  border: 1px solid var(--Colors-Primary-Orange);
+  background: var(--Colors-Primary-Orange);
+
+  border-radius: 40px;
+
+}
+
+/* forgetpass */
+.Forget-password-btn {
+  background: none;
+  border: none;
+}
+
+
+/* divider */
+.divider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.divider::before,
+.divider::after {
+  content: '';
+  height: 2px;
+  background-color: #000;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*  */
+
+
+
+/* signup btn */
+.Sign-up-btn {
+  background: none;
+  border: none;
 }
