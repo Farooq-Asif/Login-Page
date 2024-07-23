@@ -25,17 +25,25 @@ const Contactform = () => {
     <form className='col-10 d-flex flex-column align-content-center gap-3 px-4 pt-4 mt-5 pb-3 ' onSubmit={handleSubmit} id='createauthform'>
       <h6 className=' text-orange'>Welcome Back</h6>
       <h2 className='text-start'>Login to Your Account</h2>
-      <div class="input-area">
+      {/* <div class="input-area">
         <label for="exampleInputEmail1" className="form-label"> Enter Your Email</label>
         <input type="email" className="form-control px-3 py-3" id="InputEmail" aria-describedby="emailHelp" name='email' onChange={handleChange} value={values.email} />
+        {errors.email && touched.email ? (<p className='text-danger'>{errors.email}</p>) : null}
+      </div> */}
 
+      <div className="did-floating-label-content input-group">
+        <input className="did-floating-input" id="InputEmail" name='email' onChange={handleChange} value={values.email} type="email" />
+        <label className="did-floating-label"> Email</label>
         {errors.email && touched.email ? (<p className='text-danger'>{errors.email}</p>) : null}
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" className="" >Enter Your Password</label>
-        <input type="password" className="form-control px-3 py-3" id="InputPassword" name='password' value={values.password} onChange={handleChange} />
+      <div className="did-floating-label-content input-group">
+        <input class="did-floating-input" id="InputPassword" type="password" name='password'
+          value={values.password} onChange={handleChange}
+        />
+        <label className="did-floating-label">Password</label>
         {errors.password && touched.password ? <p className='text-danger'>{errors.password}</p> : null}
       </div>
+
       <div className="d-flex justify-content-between mb-1">
         <div className="d-flex  gap-2">
           <label class="checkbox">

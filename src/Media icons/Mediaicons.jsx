@@ -35,8 +35,7 @@ const Mediaicons = () => {
 
 
       <div className="media-options">
-     
-        <div className=' row field-apple py-3  mt-3'>
+        <div className='row field-apple py-3  mt-3'>
           <div className="d-flex col-4">
             <AppleIcon
               className=' Apple-icon'
