@@ -42,14 +42,19 @@
 }
 
 #InputEmail {
-    padding: 15px 4px;
+    padding: 15px;
     border-radius: 24px;
+    padding-left: 22px;
+    font-size: 20px;
+  
 }
 
 #InputPassword {
     border-radius: 24px;
-    padding: 15px 4px;
+    padding: 15px;
+    padding-left: 22px;
     font-size: 12px;
+    font-size: 20px;
 
 }
 
@@ -160,7 +165,8 @@
 .divider::after {
     content: '';
     height: 2px;
-    background-color: #000;
+    background-color: rgba(224, 224, 224, 1)
+    ;
     display: block;
 }
 
@@ -168,4 +174,17 @@
 .Sign-up-btn {
     background: none;
     border: none;
+}
+#Eye:checked + #showpassword{
+visibility: hidden;
+}
+.Icon-span{
+    cursor: pointer;
+    position:absolute; 
+    left: 90%;
+    
+    top: 17px;
+}
+#input-group-pass{
+    position: relative;
 }

@@ -17,6 +17,7 @@
     "react-dom": "^18.3.1",
     "react-google-button": "^0.8.0",
     "react-icons": "^5.2.1",
+    "react-icons-kit": "^2.0.0",
     "react-scripts": "5.0.1",
     "vue3-google-login": "^2.0.27",
     "web-vitals": "^2.1.4",
