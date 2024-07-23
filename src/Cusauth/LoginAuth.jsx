@@ -1,6 +1,7 @@
 import React from 'react'
 import trippy from '../Images/6576c04b6829c5f9a07e38534548885a.png'
-import Contactform from './Contactform'
+import Contactform from '../ContactForm/Contactform'
+import './Login .css'
 const LoginAuth = () => {
 
     return (
@@ -15,8 +16,6 @@ const LoginAuth = () => {
                                 <p className='text-white mt-3 flex-wrap d-inline-flex'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                             </div>
                         </div>
-
-
                     </div>
                     <div className="col mb-4 d-flex justify-content-center flex-wrap">
                         <Contactform />

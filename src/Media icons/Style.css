@@ -1,44 +1,57 @@
-.media-options .field-facebook {
-  display: flex;
-  background: white;
-  border: 1.2px solid black;
-  border-radius: 40px;
-  flex-wrap: wrap;
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.media-icons {
+  
+  Height: 194.4px;
+  Top: 530.7px;
+  Left: 48.6px;
+  Gap: 10.8px;
 }
 
-.facebook-icon {
-  margin-left: 6px;
 
+
+.btns {
+  background: none;
+  display: flex;
+  border: 1.2px solid black;
+  border-radius: 80px;
+  padding: 14px 4px;
+  border-radius: 1, 000px;
+  height: 57.6px;
+  width: 456px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.fb-icon {
+  margin-left: 6px;
+  color: rgba(24, 119, 242);
+
+}
+
+.btn-text{
+padding-right: 30px;
+  font-family: Hanken Grotesk;
+  width: 342px;
+  height: 43.2px;
+  top: 7.2px;
+  left: 56.4px;
+  gap: 0px;
+  font-family: "Hanken Grotesk", sans-serif;
+ font-style: normal;
+  color: rgba(13, 35, 46, 1);
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 400;
+  font-weight: 400px;
 }
 
 .google-icon {
   margin-left: 6px;
-  color: rgba(25, 118, 210, 1);
+  color: rgba(52, 168, 83)
 
 }
 
-
-
-
-
-.media-options .field-google {
-  display: flex;
-  background: white;
-  border: 1.2px solid black;
-  border-radius: 40px;
-  background: none;
-  flex-wrap: wrap;
-}
-
-
-.media-options .field-apple {
-
-  display: flex;
-  background: white;
-  border: 1.2px solid black;
-  border-radius: 40px;
-  flex-wrap: wrap;
-}
-.Apple-icon{
+.Apple-icon {
   color: black;
 }

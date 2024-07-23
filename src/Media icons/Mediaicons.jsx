@@ -1,52 +1,47 @@
 import React from 'react'
-import GoogleIcon from '@mui/icons-material/Google';
 import AppleIcon from '@mui/icons-material/Apple';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import { FcGoogle } from "react-icons/fc";
 import './Style.css'
 
 const Mediaicons = () => {
   return (
     <>
-      <div className="media-options">
-        <div className=' field-facebook py-3 row'>
-          <div className="col-4">
-            <FacebookIcon
-              className='text-primary facebook-icon'
-            />
-          </div>
-          <div className="col">
-            <span className='text-dark text-center ps-2'>Login with Facebook</span>
-          </div>
+      <div className="row media-icons mx-2">
+        <div className="row">
+          <button id='google-btn' className='btns'>
+            <div className="col-2">
+              <FcGoogle
+                className='google-icon'
+              />
+            </div>
+            <span className='text-dark ps-2 btn-text fw-1'>Log In with Google</span>
+          </button>
         </div>
-      </div>
-      <div className="media-options">
-        <div className=' row field-google py-3  mt-3 '>
-          <div className="col-4">
-            <GoogleIcon
-              className='google-icon'
-            />
-          </div>
-          <div className="col">
-            <span className='text-dark ps-2'>Login with Google</span>
-          </div>
-
+      
+        <div className="row">
+          <button id='fb-btn' className='btns'>
+            <div className="col-2">
+              <FacebookIcon
+                className='fb-icon'
+              />
+            </div>
+            <span className='text-dark ps-2 btn-text'>Log In with Facebook</span>
+          </button>
         </div>
-      </div>
-
-
-      <div className="media-options">
-        <div className='row field-apple py-3  mt-3'>
-          <div className="d-flex col-4">
-            <AppleIcon
-              className=' Apple-icon'
-            />
-          </div>
-          <div className="col">
-            <span className='text-dark ps-2'>Login with Apple</span>
-          </div>
+      
+        <div className="row">
+          <button id='apple-btn' className='btns'>
+            <div className="col-2">
+              <AppleIcon
+                className='Apple-icon'
+              />
+            </div>
+            <span className='text-dark ps-2 btn-text'>Log In with Apple</span>
+          </button>
+        </div>
 
         </div>
-      </div>
     </>
   )
 }

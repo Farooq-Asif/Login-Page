@@ -3,7 +3,7 @@ import { useFormik } from 'formik'
 import { SignUpSchema } from '../Schemas/Schemas'
 import Mediaicons from '../Media icons/Mediaicons'
 
-
+import './Contact.css'
 const Contactform = () => {
 
   const initialValues = {
@@ -11,26 +11,19 @@ const Contactform = () => {
     password: '',
   }
 
+
   const { handleChange, values, errors, touched, handleSubmit } = useFormik({
     initialValues: initialValues,
     validationSchema: SignUpSchema,
     onSubmit: (values, action) => {
-
       action.resetForm()
-
-
     }
   })
+
   return (
     <form className='col-10 d-flex flex-column align-content-center gap-3 px-4 pt-4 mt-5 pb-3 ' onSubmit={handleSubmit} id='createauthform'>
       <h6 className=' text-orange'>Welcome Back</h6>
-      <h2 className='text-start'>Login to Your Account</h2>
-      {/* <div class="input-area">
-        <label for="exampleInputEmail1" className="form-label"> Enter Your Email</label>
-        <input type="email" className="form-control px-3 py-3" id="InputEmail" aria-describedby="emailHelp" name='email' onChange={handleChange} value={values.email} />
-        {errors.email && touched.email ? (<p className='text-danger'>{errors.email}</p>) : null}
-      </div> */}
-
+      <h2 className='text-start form-title'>Login In to Your Account</h2>
       <div className="did-floating-label-content input-group">
         <input className="did-floating-input" id="InputEmail" name='email' onChange={handleChange} value={values.email} type="email" />
         <label className="did-floating-label"> Email</label>
@@ -48,7 +41,7 @@ const Contactform = () => {
         <div className="d-flex  gap-2">
           <label class="checkbox">
             <input type="checkbox" class="checkbox__input" />
-            <span class="checkbox__inner"></span>
+            <span className="checkbox__inner"></span>
           </label>
           <p className='mb-0'>Remember me</p>
         </div>
@@ -59,8 +52,6 @@ const Contactform = () => {
         <p className="divider"> OR </p>
       </div>
       <Mediaicons />
-
-
       <div className="d-flex justify-content-center gap-2 align-items-baseline ">
         <p>New User ?</p>
         <button className=' text-capitalize Sign-up-btn text-orange'>Sign up here</button>

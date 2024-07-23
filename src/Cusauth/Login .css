@@ -1,0 +1,29 @@
+ 
+  /* tripy sec */
+  .tripyy-section {
+    flex-wrap: wrap;
+    Top: 302px;
+    height: 439px;
+    Left: 144px;
+    Gap: 65px;
+    height: 439.6px;
+  }
+  
+  .tripyy-img {
+    width: 211.59px;
+    height: 84px;
+  }
+  
+  .tripyy-body {
+    display: flex;
+    flex-direction: column;
+    height: 290.6px;
+    gap: 33.6px;
+  }
+  
+  
+  
+  
+  
+  
+  
