@@ -18,30 +18,14 @@ height: auto;
   color: var(--Colors-Primary-Orange);
 }
 
-/*  */
+/*contact/login form  */
 #createauthform {
   background-color: #fff;
-  border-radius: 40px;
-  /* width: 552px; */
-}
-
-@media screen and (max-width:400px) {
-  .text-orange{
-    color: whitesmoke;
-  }
-  .createauthform{
-    width:403px;
-  }
-  
-}
-
- 
-@media screen and (min-width:894px) and (max-width:952px) {
-
+  border-radius: 20px;
 
 }
 
-/*  */
+/* tripy sec */
 .tripyy-section {
   flex-wrap: wrap;
   Top: 302px;
@@ -63,15 +47,11 @@ height: auto;
   gap: 33.6px;
 }
 
-/*  */
-
-
-
+/*contact input field  */
 
 #InputEmail {
   border-radius: 20px;
   border: 1.2px solid rgba(13, 35, 46, 1);
-
 }
 
 #InputPassword {
@@ -80,8 +60,6 @@ height: auto;
   background-color: #fff;
 
 }
-
-
 
 /* checkbox remmber me */
 
@@ -120,9 +98,7 @@ height: auto;
 .countinu-btn {
   border: 1px solid var(--Colors-Primary-Orange);
   background: var(--Colors-Primary-Orange);
-
   border-radius: 40px;
-
 }
 
 /* forgetpass */
@@ -130,8 +106,6 @@ height: auto;
   background: none;
   border: none;
 }
-
-
 /* divider */
 .divider {
   display: grid;
@@ -147,9 +121,6 @@ height: auto;
   background-color: #000;
   display: block;
 }
-
-/*  */
-
 
 /* signup btn */
 .Sign-up-btn {

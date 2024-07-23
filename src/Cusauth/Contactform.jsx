@@ -22,7 +22,7 @@ const Contactform = () => {
     }
   })
   return (
-    <form className='col-10 d-flex flex-column align-content-center gap-3 px-4 pt-4 mt-5 ' onSubmit={handleSubmit} id='createauthform'>
+    <form className='col-10 d-flex flex-column align-content-center gap-3 px-4 pt-4 mt-5 pb-3 ' onSubmit={handleSubmit} id='createauthform'>
       <h6 className=' text-orange'>Welcome Back</h6>
       <h2 className='text-start'>Login to Your Account</h2>
       <div class="input-area">
