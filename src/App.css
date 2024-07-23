@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 100vh;
+height: auto;
   background-image: url(Images/cusauth.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,64 +22,26 @@ body {
 #createauthform {
   background-color: #fff;
   border-radius: 40px;
-  width: 552px;
-
+  /* width: 552px; */
 }
 
-@media screen and (max-width:900px) {
-  .createauthform {
-    width: 400px;
-    height: 700px;
-
+@media screen and (max-width:400px) {
+  .text-orange{
+    color: whitesmoke;
   }
-
-  body {
-    height: 200vh;
+  .createauthform{
+    width:403px;
   }
-
+  
 }
 
-@media screen and (max-width:320px) {
-  .createauthform {
-    width: 400px;
-    /* height: 400px; */
-
-  }
-
-  body {
-    height: 100vh;
-  }
-
-}
-
-
+ 
 @media screen and (min-width:894px) and (max-width:952px) {
-  body {
-    height: 240vh;
-  }
+
 
 }
 
-@media screen and (max-width:375px) {
-  body {
-    height: 240vh;
-  }
-
-  .createauthform {
-    height: 650px;
-  }
-}
-
-@media screen and (min-width:315px) and (max-width:418px) {
-  body {
-    height: 240vh;
-  }
-
-  .createauthform {
-    height: 700px;
-  }
-}
-
+/*  */
 .tripyy-section {
   flex-wrap: wrap;
   Top: 302px;
@@ -97,35 +59,14 @@ body {
 .tripyy-body {
   display: flex;
   flex-direction: column;
-  width: 500px;
   height: 290.6px;
-  gap: 57.6px;
+  gap: 33.6px;
 }
 
 /*  */
-/* .input-area {
-  position: relative;
-}
-
-#InputEmail {
-  background: transparent;
-  
-}
-
-.form-label {
-  position: absolute;
-  top: 29px;
-  left: 26px;
-  transform: translateY(-50%);
-  font-size: 16px;
-  color: #fff;
-  pointer-events: none;
-} */
 
 
-#inputEmail:focus .form-label{
-  bottom: 0px;
-}
+
 
 #InputEmail {
   border-radius: 20px;
@@ -208,7 +149,6 @@ body {
 }
 
 /*  */
-
 
 
 /* signup btn */

@@ -1,0 +1,45 @@
+.media-options .field-facebook {
+  display: flex;
+  background: white;
+  border: 1.2px solid black;
+  border-radius: 40px;
+  flex-wrap: wrap;
+}
+
+.facebook-icon {
+  margin-left: 6px;
+
+}
+
+.google-icon {
+  margin-left: 6px;
+  color: rgba(25, 118, 210, 1);
+
+}
+
+
+
+
+
+.media-options .field-google {
+  display: flex;
+  background: white;
+  border: 1.2px solid black;
+  border-radius: 40px;
+  background: none;
+  /* width: 500px; */
+  flex-wrap: wrap;
+}
+
+
+.media-options .field-apple {
+
+  display: flex;
+  background: white;
+  border: 1.2px solid black;
+  border-radius: 40px;
+  flex-wrap: wrap;
+}
+.Apple-icon{
+  color: black;
+}
